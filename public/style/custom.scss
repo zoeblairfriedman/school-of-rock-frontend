@@ -1,11 +1,21 @@
 // main
 
-body {
-    background: url(school.png) bottom center / cover no-repeat;
-    background-color: #b5d7e1;
-    min-height: 750px;
-    position: relative;
-    font-family: 'Gochi Hand', cursive;
+// body {
+//     background: url(school.png) bottom center / cover no-repeat;
+//     background-color: #b5d7e1;
+//     min-height: 750px;
+//     position: relative;
+//     font-family: 'Gochi Hand', cursive;
+// }
+
+body { 
+  background: url(school.png) no-repeat center center fixed; 
+  background-color: #b5d7e1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Gochi Hand', cursive;
 }
 
 h2, h4 {

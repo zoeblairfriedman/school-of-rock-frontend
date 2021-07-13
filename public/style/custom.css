@@ -1,0 +1,97 @@
+body {
+  background: url(school.png) bottom center/no-repeat center fixed;
+  background-color: #b5d7e1;
+  min-height: 750px;
+  position: relative;
+  font-family: 'Gochi Hand', cursive; }
+
+h2, h4 {
+  font-family: 'Amatic SC', cursive; }
+
+.navbar {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 100;
+  font-size: 2rem; }
+  .navbar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px; }
+
+.modal-body {
+  background: none; }
+  .modal-body label {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5rem; }
+
+#showAndTellContainer {
+  padding-left: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 9rem;
+  background-image: url(bulletinboard.png);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  #showAndTellContainer p {
+    font-family: 'Amatic SC', cursive; }
+
+.show-and-tell-intro {
+  cursor: pointer; }
+
+.pink-modal {
+  background-color: #e022b3; }
+
+.blue-modal {
+  background-color: #5ac9f7; }
+
+.modal-title {
+  font-family: 'Amatic SC', cursive;
+  color: white; }
+
+.rock-body {
+  position: relative;
+  display: inline-block;
+  height: 15rem;
+  padding: 5px; }
+
+.rock-div {
+  position: relative;
+  display: inline-block;
+  height: 15rem;
+  padding: 5px; }
+
+.mouth {
+  position: absolute;
+  height: 6rem;
+  top: 70px;
+  left: 80px; }
+
+.eyes {
+  position: absolute;
+  height: 3rem;
+  top: 50px;
+  left: 80px; }
+
+.name {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  /* color: white */ }
+
+.delete {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  border-radius: 2rem; }
+
+.take-home {
+  border-radius: 2rem; }
+
+.body-thumbnail {
+  height: 5rem; }
+
+.mouth-thumbnail {
+  height: 3rem; }
+
+.eye-thumbnail {
+  height: 2rem; }
+
+/*# sourceMappingURL=custom.css.map */
