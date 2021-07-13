@@ -1,0 +1,64 @@
+
+.rock-body {
+  position: relative;
+  display: inline-block;
+  height: 15rem;
+  padding: 5px;
+}
+
+.rock-div {
+    position: relative;
+    display: inline-block;
+    height: 15rem;
+    padding: 5px;
+  }
+
+  .mouth {
+   position: absolute;
+   height: 6rem;
+    top: 70px;
+    left: 80px;
+  }
+  
+  .eyes {
+    position: absolute;
+    height: 3rem;
+    top: 50px;
+    left: 80px;
+  }
+
+  .name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    /* color: white */
+  }
+
+  .delete {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+  }
+
+
+  .body-thumbnail {
+    height: 5rem;
+  }
+  .mouth-thumbnail {
+    height: 3rem;
+  }
+  .eye-thumbnail {
+    height: 2rem;
+  }
+  
+
+  .show-and-tell-intro {
+    /* display: table; */
+    cursor: pointer;
+  }
+
+  #new-btn {
+    display: flex;
+    justify-content: center;
+  }
+

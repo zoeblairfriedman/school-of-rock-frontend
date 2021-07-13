@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/app.css">
+    
+    <title>School of Rock</title>
+</head>
+
+<nav id="mainNav" class="navbar fixed-top navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="text-primary nav-link" href="#" data-toggle="modal" data-target="#createModal">Create Rock</a>
+        <a class="text-primary nav-link" href="#" data-toggle="modal" data-target="#showModal">Show & Tell</a>
+      </div>
+    </div>
+</nav>
+
+<section id="logoSection">
+        <div class="container d-flex justify-content-center">
+         <img class="img-fluid" src="logo.png" alt="" id="logo">
+      </div>
+</section>
+
+<section id="mainSection">
+    <div id="rockContainer" class="mb-4 fixed-bottom"></div>
+</section>
+
+<!-- show and tell modal -->
+<div class="modal fade" id="showModal" tabindex="-1" aria-labelledby="showModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header blue-modal">
+          <h5 class="h2 modal-title" id="exampleModalLabel">Show and Tell</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body p-0">
+            <div id="showAndTellContainer" class="showAndTell">
+            </div>
+        </div>
+        <div class="modal-footer blue-modal">
+            <button id="closeModal" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- create rock modal -->
+<section>
+    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header pink-modal">
+              <h5 class="h2 modal-title" id="exampleModalLabel">CREATE ROCK</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form id="rockForm">
+                    <div class="form-group form-inline">
+                        <label class="mr-3" for="name">Name</label>
+                        <input type="text" id="name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="body">Body</label>
+                        <img src="body/one.png" class="body-thumbnail">
+                        <input type="radio" id="one" name="body" value="one" class="radio">
+                        <img src="body/two.png" class="body-thumbnail">
+                        <input type="radio" id="two" name="body" value="two" class="radio">
+                        <img src="body/three.png" class="body-thumbnail">
+                        <input type="radio" id="three" name="body" value="three" class="radio">
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label class= "mr-3" for="eyes">Eyes</label>
+                        <img src="eyes/blue.png" class="eye-thumbnail">
+                        <input type="radio" id="blue" name="eyes" value="blue" class="radio">
+                        <img src="eyes/white.png" class="eye-thumbnail">
+                        <input type="radio" id="white" name="eyes" value="white" class="radio">
+                        <img src="eyes/squint.png" class="eye-thumbnail">
+                        <input type="radio" id="squint" name="eyes" value="squint" class="radio">
+                        <img src="eyes/pink.png" class="eye-thumbnail">
+                        <input type="radio" id="pink" name="eyes" value="pink" class="radio">               
+                    </div>
+                    <div class="form-group">
+                        <label class= "mr-3" for="mouth">Mouth</label>
+                        <img src="mouth/arr.png" class="mouth-thumbnail">
+                        <input type="radio" id="arr" name="mouth" value="arr" class="radio">
+                        <img src="mouth/goldtooth.png" class="mouth-thumbnail">
+                        <input type="radio" id="goldtooth" name="mouth" value="goldtooth" class="radio">
+                        <img src="mouth/ooh.png" class="mouth-thumbnail">
+                        <input type="radio" id="ooh" name="mouth" value="ooh" class="radio">
+                        <img src="mouth/hmm.png" class="mouth-thumbnail">
+                        <input type="radio" id="hmm" name="mouth" value="hmm" class="radio">
+                        <img src="mouth/vrr.png" class="mouth-thumbnail">
+                        <input type="radio" id="vrr" name="mouth" value="vrr" class="radio">
+                    </div>
+                    <hr>
+                    <input type="submit" class="btn btn-primary" value="Create Rock">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="src/rock.js"></script>
+<script src="src/show.js"></script>
+<script src="src/api.js"></script>
+<script src="src/index.js"></script>
+<!-- <script>
+    $(function () {
+    $(document).scroll(function () {
+    var $nav = $("#mainNav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+    });
+  </script> -->
+
+</body>
+</html>
