@@ -15,8 +15,7 @@ let flash = setInterval(flashLogo, 1000)
 
 const logo = document.getElementById("logo")
 function flashLogo(){
-    debugger
-    logo.src === "./logo.png" ? logo.src = "./literal-logo.png" : logo.src = "./logo.png"
+    logo.src === "https://school-of-rock-frontend.herokuapp.com/logo.png" ? logo.src = "https://school-of-rock-frontend.herokuapp.com/literal-logo.png" : logo.src = "https://school-of-rock-frontend.herokuapp.com/logo.png"
 }
 
 
