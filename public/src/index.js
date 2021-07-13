@@ -15,9 +15,10 @@ let flash = setInterval(flashLogo, 1000)
 
 const logo = document.getElementById("logo")
 function flashLogo(){
-    const url = "file:///Users/ZBF/Development/code/school-of-rock-frontend-heroku/"
-    logo.src === `${url}logo.png` ? logo.src = `${url}literal-logo.png` : logo.src = `${url}logo.png`
+    debugger
+    logo.src === "./logo.png" ? logo.src = "./literal-logo.png" : logo.src = "./logo.png"
 }
+
 
 logo.addEventListener("click", () => clearTimeout(flash))
 
