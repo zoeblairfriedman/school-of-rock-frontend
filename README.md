@@ -2,7 +2,7 @@
 
 This application was created with Ruby on Rails, PostgreSQL, Javascript, custom Bootstrap, and CSS.
 
-## With both the frontend and backend now hosted on Heroku you can enjoy this application live at: https://school-of-rock-frontend.herokuapp.com/
+### With both the frontend and backend now hosted on Heroku you can enjoy this application live at: https://school-of-rock-frontend.herokuapp.com/
 
 ## Enjoy School of Rock
 
@@ -13,4 +13,4 @@ This application was created with Ruby on Rails, PostgreSQL, Javascript, custom 
 * "Take Home" Show & Tell items
 
 
-## Rails Backend here --> https://github.com/zoeblairfriedman/school-of-rock
+### Rails Backend here --> https://github.com/zoeblairfriedman/school-of-rock
